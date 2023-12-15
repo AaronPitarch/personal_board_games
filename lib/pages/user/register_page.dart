@@ -51,10 +51,10 @@ class _RegisterPageState extends State<RegisterPage> {
 
             const SizedBox(height: 30),
 
-            TextButton(
+            ElevatedButton(
               onPressed: () {
-                Navigator.pop(context);
-              }, 
+                  Navigator.pop(context);
+                },
               child: const Text('Aceptar'),
             ),
           ],

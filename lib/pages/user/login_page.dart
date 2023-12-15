@@ -28,6 +28,9 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
+
+            const SizedBox(height: 16.0),
+
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 30),
               child: const TextField(
@@ -36,12 +39,21 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
+
             const SizedBox(height: 16.0),
+
+            ElevatedButton(
+              onPressed: () {
+                  //lo que sea
+                },
+              child: const Text('Entrar'),
+            ),
+
             TextButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => const RegisterPage()));
               }, 
-              child: const Text('¿No tienes cuenta?, Registrate')
+              child: const Text('¿No tienes cuenta? Registrate')
             ),
           ],
         )

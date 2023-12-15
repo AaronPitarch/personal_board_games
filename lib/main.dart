@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:personal_board_games/pages/games/list_games_page.dart';
 import 'package:personal_board_games/pages/user/login_page.dart';
 
 void main() {
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const LoginPage(),
+      //home: const LoginPage(),
+      home: const ListGames(),
     );
   }
 }
